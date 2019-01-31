@@ -6,12 +6,7 @@ import (
 
 // Deformation represents a deformation of the antenna.
 type Deformation struct {
+	Time       time.Time
 	PositionID int64
 	Volume     float32
-}
-
-// Deformations represents the total deformation of the antenna.
-type Deformations struct {
-	Time        time.Time
-	Deformation []*Deformation
 }
