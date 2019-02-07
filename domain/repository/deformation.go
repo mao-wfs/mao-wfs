@@ -8,7 +8,7 @@ import (
 
 // DeformationRepository is the domain repository for deformation of the antenna.
 type DeformationRepository interface {
-	StoreByPositionID(posID int64, deformations *model.Deformation) error
+	Store(deformation *model.Deformation) error
 	FindByPositionID(posID int64, beginTime, endTime time.Time) ([]*model.Deformation, error)
 	FindLatestByPositionID(posID int64) (*model.Deformation, error)
 }
