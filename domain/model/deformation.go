@@ -7,7 +7,7 @@ import (
 // Deformation represents a deformation of the antenna.
 type Deformation struct {
 	Time       time.Time
-	PositionID int64
+	PositionID PositionID
 	Volume     float32
 }
 
