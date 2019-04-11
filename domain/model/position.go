@@ -6,13 +6,13 @@ type Position struct {
 	Coordinates *Coordinates
 }
 
-// PositionID is the ID of a position on the antenna.
+// PositionID is an ID of a position on the antenna.
 type PositionID int
 
-// GetID returns "ID".
+// GetID returns the position ID.
 func (p *Position) GetID() PositionID { return p.ID }
 
-// GetCoordinates returns "Coordinates".
+// GetCoordinates returns the coordinates at the position.
 func (p *Position) GetCoordinates() *Coordinates { return p.Coordinates }
 
 // Coordinates represents the coordinates of the antenna.
@@ -21,8 +21,8 @@ type Coordinates struct {
 	Angle  float32
 }
 
-// GetRadius returns "Radius".
+// GetRadius returns the radius at the position.
 func (c *Coordinates) GetRadius() float32 { return c.Radius }
 
-// GetAngle returns "Angle".
+// GetAngle returns the angle at the position.
 func (c *Coordinates) GetAngle() float32 { return c.Angle }
